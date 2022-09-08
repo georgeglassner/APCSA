@@ -1,12 +1,18 @@
 class test{
  public static void main(String[] args) {
-    
+    int c = 0;
     Person Gabe = new Person(6.01, 16, "Gabe", "Brown");
-    System.out.println(Gabe.name);
-    Person Gabe1 = new Person(5.99, 16, "Gabe1", "Brown");
+    Person George = new Person(5.5, 16, "George", "Dirty Blonde");
 
     HotelRoom Marriot = new HotelRoom(1);
-    System.out.println(Marriot.roomNumber);
-    
+    Marriot.checkIn(Gabe);
+    Marriot.checkIn(George);
+
+    Marriot.checkOut(Gabe);
+
+    c = Marriot.checkCapacity();
+    System.out.println(c);
+
+    Marriot.printGuestInfo();
     }
 }
