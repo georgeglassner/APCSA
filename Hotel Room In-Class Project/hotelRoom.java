@@ -1,26 +1,27 @@
-public class hotelRoom{
+public class HotelRoom{
+    int roomNumber;
     Person guestOne;
     Person guestTwo;
-    int roomNumber;
-
-hotelRoom(Person g1, Person g2, int rn){
-    guestOne = g1;
-    guestTwo = g2;
+HotelRoom(int rn){
     roomNumber = rn;
-
-
+    
 }
 
 void checkIn(Person guest){
-    
+    if(guestOne == null){
+        guestOne = guest;
+    if(guestOne != null && guestTwo != null){
+        System.out.println("There is no space in this room!");
+    }
+ 
+    System.out.println(guest.name + "checked into room number" + roomNumber +"!");
+    }
+
+
 }
 
 void checkOut(Person guest){
 
-}
-
-int checkCapacity(x){
-    return(x);
 }
 
 void printGuestInfo(){
