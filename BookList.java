@@ -9,14 +9,18 @@ class BookList {
         try {
             File myfile = new File("./booklist.csv");
             Scanner rd = new Scanner(myfile);
-            String[] bookData;
+            String [] bookData;
+            String 
 
             rd.nextLine();
-            while (rd.hasNext()) {
-                bookData = rd.nextLine().split(",");
-                //for (int i = 0; i < bookData.length; i++) {
-                    //System.out.println(bookData[i]);
-                //}
+            while (rd.hasNext()){
+                bookLine = rd.nextLine();
+                bookData = bookLine.split(",");
+                bookList.add(new)
+                
+                    
+
+                }
             }
 
         }
